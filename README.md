@@ -1,3 +1,38 @@
+# About
+# Yummy Galata
+
+Yummy Galata is a social media platform exclusively designed for cooking enthusiasts. It provides a platform for users to share their favorite recipes, connect with like-minded people, and explore a world of culinary delights.
+
+## Features
+
+### 1]Recipe Sharing
+- Users can create and share their favorite recipes, complete with ingredients and cooking instructions.
+- Explore a diverse collection of recipes from fellow cooking enthusiasts.
+
+### 2]Networking
+- Add or Remove Friends: Connect with other users who share your passion for cooking.
+- Post Likes: Show appreciation for mouthwatering recipes by liking them.
+- Commenting: Engage in discussions and share cooking tips through comments.
+
+### 3]Mobile-Friendly
+- Yummy Galata is designed to be responsive and accessible on both mobile and desktop screens, ensuring a seamless experience for users
+
+### 4]Light/Dark mode
+
+## Tech Stack
+### Front-End
+### 1]React
+### 2]Material UI
+### 3]Formik and Yup
+### 4]Redux toolkit(StateManagement) and persistent(LocalStorage)
+
+### Back-End
+### 1]Node.js
+### 2]Express.js
+### 3]Mongoose
+### 4]JWT-Json Web Token
+
+## Getting Started
 # Results of APP
 
 ## Login page
