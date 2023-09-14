@@ -18,6 +18,9 @@ function App() {
   const mode=useSelector((state)=>state.mode);
   //passing that mode to theme.js file
   const theme=useMemo(()=>createTheme(themeSettings(mode)),[mode]);
+  //to ensure authentication of user
+  const isAuth = Boolean(useSelector((state) => state.token));
+  
   return (
     <div className="app">
       <BrowserRouter>
@@ -26,9 +29,15 @@ function App() {
           
           <CssBaseline />
           <Routes>
-            <Route path="/" element={<LoginPage />}/>
-            <Route path="/home" element={<HomePage />}/>
-            <Route path="/profile/:userId" element={<ProfilePage />}/>
+            <Route path="/" element={<LoginPage />} />
+            <Route
+              path="/home"
+              element={isAuth ? <HomePage /> : <Navigate to="/" />}
+            />
+            <Route
+              path="/profile/:userId"
+              element={isAuth ? <ProfilePage /> : <Navigate to="/" />}
+            />
           </Routes>
         </ThemeProvider>
 
