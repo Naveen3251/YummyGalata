@@ -2,7 +2,7 @@ import {useState} from "react";
 import { Box, Button, TextField, useMediaQuery, Typography, useTheme } from "@mui/material";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 //for the formlib
-import { Formik } from "formik";
+import { Formik,Form } from "formik";
 //validation library
 import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
@@ -52,7 +52,7 @@ const initialValuesLogin={
 };
 
 //Form component
-const Form=()=>{
+const LRForm=()=>{
     //display diff form using this state (registerpage or login page)
     const [pageType,setPageType]=useState("login");
     const {palette}=useTheme();
@@ -272,4 +272,4 @@ const Form=()=>{
 
 }
 
-export default Form;
+export default LRForm;
