@@ -161,25 +161,25 @@ const LRForm=()=>{
                                         name="firstName"
                                         error={Boolean(touched.firstName) && Boolean(errors.firstName)}
                                         helperText={touched.firstName && errors.firstName}
-                                        sx={{gridColumn:"span2"}}
+                                        sx={{ gridColumn: isNonMobile ? "span4" : "span2" }}
                                 />
-                                 <TextField label="Last Name" onBlur={handleBlur} onChange={handleChange} value={values.firstName} 
+                                 <TextField label="Last Name" onBlur={handleBlur} onChange={handleChange} value={values.lastName} 
                                         name="lastName"
                                         error={Boolean(touched.lastName) && Boolean(errors.lastName)}
                                         helperText={touched.lastName && errors.lastName}
-                                        sx={{gridColumn:"span2"}}
+                                        sx={{ gridColumn: isNonMobile ? "span4" : "span2" }}
                                 />
-                                 <TextField label="Location" onBlur={handleBlur} onChange={handleChange} value={values.firstName} 
+                                 <TextField label="Location" onBlur={handleBlur} onChange={handleChange} value={values.location} 
                                         name="location"
                                         error={Boolean(touched.location) && Boolean(errors.location)}
                                         helperText={touched.location && errors.location}
-                                        sx={{gridColumn:"span4"}}
+                                        sx={{ gridColumn: isNonMobile ? "span4" : "span2" }}
                                 />
-                                 <TextField label="Occupation" onBlur={handleBlur} onChange={handleChange} value={values.firstName} 
+                                 <TextField label="Occupation" onBlur={handleBlur} onChange={handleChange} value={values.occupation} 
                                         name="occupation"
                                         error={Boolean(touched.occupation) && Boolean(errors.occupation)}
                                         helperText={touched.occupation && errors.occupation}
-                                        sx={{gridColumn:"span4"}}
+                                        sx={{ gridColumn: isNonMobile ? "span4" : "span2" }}
                                 />
                                 {/*for image*/}
                             <Box gridColumn="span4" border={`1px solid ${palette.neutral.medium}`} borderRadius="5px" p="1rem">
@@ -222,14 +222,14 @@ const LRForm=()=>{
                                         name="email"
                                         error={Boolean(touched.email) && Boolean(errors.email)}
                                         helperText={touched.email && errors.email}
-                                        sx={{gridColumn:"span4"}}
+                                        sx={{ gridColumn: isNonMobile ? "span4" : "span2" }}
                     />
                     <TextField label="Password" onBlur={handleBlur} onChange={handleChange} value={values.password} 
                                         name="password"
                                         type="password"
                                         error={Boolean(touched.password) && Boolean(errors.password)}
                                         helperText={touched.password && errors.password}
-                                        sx={{gridColumn:"span4"}}
+                                        sx={{ gridColumn: isNonMobile ? "span4" : "span2" }}
                     />
                     </Box>
 
