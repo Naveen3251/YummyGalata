@@ -12,9 +12,13 @@
 ## Upload Posts
 ![Screenshot 2023-09-14 185914](https://github.com/Naveen3251/YummyGalata/assets/114800360/06fa2584-9634-4406-97cf-5c4c109321b2)
 
-## Li
+## Like the post
 ![Screenshot 2023-09-14 190829](https://github.com/Naveen3251/YummyGalata/assets/114800360/9dd9dfba-6322-4a1d-a7ef-9104f9f126c2)
+
+## Suited for Phone
 ![Screenshot 2023-09-14 190926](https://github.com/Naveen3251/YummyGalata/assets/114800360/c8ee9766-6339-4908-abae-1d025a95932c)
+
+## Add or Remove friends
 ![Screenshot 2023-09-14 192930](https://github.com/Naveen3251/YummyGalata/assets/114800360/f111e0b6-77c5-4e86-8786-9de61bb06c53)
 
 # Getting Started with Create React App
