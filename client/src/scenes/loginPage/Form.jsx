@@ -76,7 +76,7 @@ const LRForm=()=>{
         formData.append('picturePath',values.picture.name)
         //sendding data to backend
         const savedUserResponse=await fetch(
-            "https://localhost:3001/auth/register",
+            "http://localhost:3001/auth/register",
             {
                 method:"POST",
                 body:formData,
@@ -94,7 +94,7 @@ const LRForm=()=>{
 
     const login=async(values,onSubmitProps)=>{
         const loggedInResponse=await fetch(
-            "https://localhost:3001/auth/login",
+            "http://localhost:3001/auth/login",
             {
                 method:"POST",
                 headers:{"Content-Type":"application/json"},
